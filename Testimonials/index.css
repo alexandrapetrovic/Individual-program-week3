@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+  pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
+  small, strike, strong, sub, sup, tt, var, b, u, i, center,
+  dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot,
+  thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer,
+  header, hgroup, menu, nav, output, ruby, section, summary,
+  time, mark, audio, video {
+   margin: 0;
+   padding: 0;
+  }
+  
+  /* HTML5 display-role reset for older browsers */
+  article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+  blockquote, q {
+    quotes: none;
+  }
+  
+  blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+  }
+  
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  :root {
+    --fw-400: 400;
+    --fw-700: 700;
+    --bg-body: #F2FEFF;
+    --color-black: #000000;
+    --color-white:  #FFFFFF;
+    --color-primary: #9BB0FA;
+    --color-secondary: #978EA6;
+    --color-purple: #435DBC;
+    --color-grey: #C0C3CA;
+    --color-shadow: #E9E9E9;
+    --box-shadow: 0px 12px 36px -6px #C0C3CA;
+    --text-align: center;
+  }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-body);
+  }
+
+  main {
+    padding: 4rem;
+  }
+
+  /*
+  h1 - 36px
+  h2 - 24px
+  */
+
+  h1, .h1 {
+    font-size: 2.25rem;
+    font-weight: var(--fw-700);
+  }
+
+  h2, .h2 {
+    font-size: 1.5rem;
+    font-weight: var(--fw-400);
+  }
+
+  .text-purple {
+    color: var(--color-purple)
+  }
+
+  .text-center {
+    text-align: var(--text-align)
+  }
+
+  .my-2 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-white);
+    box-shadow: var(--box-shadow);
+    border-radius: 6px;
+    max-width: 282px;
+    padding: 2rem;
+  }
+
+  .card-user {
+    border: 4px solid #9BB0FA;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .quotes {
+    margin-top: 14px;
+    margin-bottom: 14px;
+    object-fit: contain;
+  }
+
+  blockquote {
+    min-height: 120px;
+    font-size: 12px;
+  }
+
+  .divider {
+    border: 2px solid #9BB0FA;
+    width: 44px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  figcaption {
+    color: var(--color-secondary)
+  }
+
+
+  @media only screen and (max-width: 600px) {
+    .container {
+        flex-wrap: wrap;
+        gap:20px
+    }
+  }
